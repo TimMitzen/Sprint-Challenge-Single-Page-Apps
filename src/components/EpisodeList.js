@@ -15,12 +15,19 @@ const EpisodeList = (props) => {
          .catch(error=>{
             console.log(error)
          })
-   )),[]
+  ),[] )
+  return (
+   <section className="character-list grid-view">
+     <h2>
+       TODO: `array.map()` over your state here!
+       {episode.map((item, key) => (
+          <p key={key}>{item.episode}</p>
+        ))}
+     </h2>
+   </section>
+ );
    
-   return(
-   <>
-   </>
-   );
+   
    }
       
 export default EpisodeList;
