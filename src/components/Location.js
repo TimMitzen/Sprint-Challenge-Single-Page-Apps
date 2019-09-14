@@ -18,9 +18,9 @@ const Location = (props) => {
    return (
       <section className="character-list grid-view">
         <h2>
-          TODO: `array.map()` over your state here!
+         
           {location.map((item, key) => (
-          <p key={key}>{item.type}</p>
+          <p key={key}> {item.name} Planet: {item.type} {item.dimension} Residents: {item.residents.length}</p>
         ))}
         
         </h2>

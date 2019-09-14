@@ -19,7 +19,7 @@ const EpisodeList = (props) => {
   return (
    <section className="character-list grid-view">
      <h2>
-       TODO: `array.map()` over your state here!
+       
        {episode.map((item, key) => (
           <p key={key}>{item.episode}</p>
         ))}
