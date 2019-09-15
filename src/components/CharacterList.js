@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styled from 'styled-components';
+import { Card, Icon, Image, CardMeta} from "semantic-ui-react";
 export default function CharacterList(props) {
   // TODO: Add useState to track data from useEffect
   const [character, setCharacter] = useState([])
@@ -26,17 +27,19 @@ export default function CharacterList(props) {
       <>
         
         {character.map((item, key) => (
-          <Container>
-          <p key={key}>Name: {item.name}</p> 
-          <p>Status: {item.status}</p> 
-          <p>Species: {item.species} </p>
-          <img src ={item.image}/>
-         </Container>
+          <>
+          <Card>
+          <Card.Content>
+          <Card.Header> <p key={key}>{item.name}</p> </Card.Header>
+          <CardMeta><p>Status: {item.status}</p> </CardMeta>
+          <CardMeta><p>Species: {item.species} </p></CardMeta>
+          <Image><img src={item.image}/> </Image>
+          </Card.Content> 
+         </Card>
+         </>
         ))}
       </>
     </section>
   );
 }
-const Container = styled.div`
-display: flex;
-flex-wrap: wrap;`;
+

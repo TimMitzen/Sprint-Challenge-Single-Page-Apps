@@ -1,7 +1,7 @@
 import React, {useEffect, useState}from "react";
 import axios from "axios";
-
-const Location = (props) => {
+import {Card, Icon } from "semantic-ui-react"
+const Location = (props) => {;
    const [location, setLocation] = useState([])
    // const id = props.match.params.id;  
    useEffect(()=>{
@@ -17,13 +17,17 @@ const Location = (props) => {
    },[])
    return (
       <section className="character-list grid-view">
-        <h2>
+        
          
           {location.map((item, key) => (
-          <p key={key}> {item.name} Planet: {item.type} {item.dimension} Residents: {item.residents.length}</p>
+          <Card>
+             <Card.Content><p key={key}> {item.name}</p> </Card.Content>
+             <Card.Content><p>Planet: {item.type} {item.dimension}</p> </Card.Content>
+             <Card.Meta> <p>Residents: {item.residents.length}</p></Card.Meta>
+             </Card>
         ))}
         
-        </h2>
+       
       </section>
     );
    }

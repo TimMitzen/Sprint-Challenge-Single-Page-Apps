@@ -1,8 +1,8 @@
 import React from "react";
-import { Tab, Menu, Icon } from "semantic-ui-react";
+import { Tab, Menu, Icon, MenuHeader } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
 import WelcomePage from "./WelcomePage";
-
+import styled from "styled-components";
 // TODO: Add missing menu/tabs/nav below
 
 // Review Semantic UI Component options for nav-like UI:
@@ -13,9 +13,11 @@ import WelcomePage from "./WelcomePage";
 
 export default function TabNav() {
    return( <>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/characterList">Characters</NavLink>
-            <NavLink to="/location">Location</NavLink>
+           <Menu>
+            <Menu.Item><NavLink to="/">Home</NavLink></Menu.Item>
+            <Menu.Item><NavLink to="/characterList">Characters</NavLink></Menu.Item>
+            <Menu.Item><NavLink to="/location">Location</NavLink></Menu.Item>
+            </Menu>
             </>
             );
 };
