@@ -13,9 +13,10 @@ export default function App() {
       <TabNav />
       {/* <TabNav /> */}
       <Route path="/" component={WelcomePage} exact/>
-      <Route path ="/character:id" render={props=><CharacterList {...props} character={CharacterList}/>}/>
+      <Route path ="/character" component={CharacterList}/>
       <Route path="/episode" component={EpisodeList}/>
       <Route path="/location" component={Location}/>
+      
      
 
     </main>

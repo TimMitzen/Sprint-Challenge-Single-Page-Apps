@@ -15,8 +15,9 @@ export default function TabNav() {
    return( <>
            <Menu>
             <Menu.Item><NavLink to="/">Home</NavLink></Menu.Item>
-            <Menu.Item><NavLink to="/characterList">Characters</NavLink></Menu.Item>
+            <Menu.Item><NavLink to="/character">Characters</NavLink></Menu.Item>
             <Menu.Item><NavLink to="/location">Location</NavLink></Menu.Item>
+            <Menu.Item><NavLink to="/episode">Episode</NavLink></Menu.Item>
             </Menu>
             </>
             );

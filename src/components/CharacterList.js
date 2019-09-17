@@ -24,7 +24,7 @@ export default function CharacterList(props) {
 
   return (
     <section className="character-list grid-view">
-      <>
+      
         
         {character.map((item, key) => (
           <>
@@ -38,7 +38,7 @@ export default function CharacterList(props) {
          </Card>
          </>
         ))}
-      </>
+      
     </section>
   );
 }
