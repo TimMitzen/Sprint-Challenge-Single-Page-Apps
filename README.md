@@ -26,10 +26,13 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Explain benefit(s) using `client-side routing`?
 > Answer:
+Basically, everything loads on the page at first and is quicker switching to different elements. Also uses javascript to handle the routing of the page.
 - [ ] What does AJAX stand for?
-> Answer:
+> Answer: AJAX uses a liberties like axios to make data calls or fetch data, axios uses promises to do this.
 - [ ] What are `controlled components` in React?
 > Answer:
+Can control the components through using React. onChange is example of a controlled component.
+
 
 
 ## Project Set Up
